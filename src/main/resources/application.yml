@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #服务器部署
+    url: jdbc:mysql://localhost:3306/db_rbac?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8
+    username: root
+    password: 123456
+  #自定义用户后，配置失效
+  security:
+    user:
+      name: admin
+      password: 123456
+
+#配置token生成策略
+config:
+  jwt:
+    secret: test1@Login(Auth}*^31)&heiMa% #这里可以自己定制
+    expire: 30 # 过期时间,单位分钟
+    header: testProject #随意定制
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
