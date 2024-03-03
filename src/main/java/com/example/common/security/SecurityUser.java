@@ -1,4 +1,4 @@
-package com.example.vo;
+package com.example.common.security;
 
 import com.example.entity.User;
 import org.springframework.security.core.GrantedAuthority;

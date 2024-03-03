@@ -1,8 +1,9 @@
-package com.example.service.impl;
+package com.example.common.security;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.example.entity.User;
-import com.example.vo.SecurityUser;
+import com.example.service.impl.PermissionServiceImpl;
+import com.example.service.impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
